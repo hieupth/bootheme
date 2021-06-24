@@ -1,0 +1,10 @@
+.navbar {
+    .navbar-brand {
+        img {
+            max-height: 64px;
+        }
+    }
+    .nav-link {
+        @include side_padding(15px);
+    }
+}
