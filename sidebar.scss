@@ -1,0 +1,63 @@
+// text
+$text_normal: #334D6E;
+$email: #90A0B7;
+
+// icon
+$active: #267C85;
+$icon_normal: #C2CFE0;
+
+.sidebar{
+    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+    &__profile{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding-block: 3vh;
+        >img{
+            width: 3.846rem;
+        }
+        .info{
+            &__name{
+                font-weight: bold;
+            }
+            &__email{
+                color: $email;
+                font-size: 0.8462rem;
+            }
+            >p{
+                margin: 0;
+            }
+        }
+    }
+    &__title{
+        text-decoration: none;
+        font-weight: bold;
+        color: $active;
+        font-size: 1.385rem;
+    }
+    &__link{
+        text-decoration: none;
+        color: $text_normal;
+        svg{
+            stroke: $icon_normal;
+            rect{
+                stroke: none;
+            }
+        }
+        &--active{
+            color: $active;
+            svg{
+                path{
+                    stroke: $active;
+                }
+                rect{
+                    fill: $active;
+                    stroke: none;
+                }
+            }
+        }
+    }
+}
+

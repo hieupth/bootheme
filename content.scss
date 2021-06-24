@@ -1,0 +1,12 @@
+$background: #E5E5E5;
+.wrapper{
+    height: 100vh;
+}
+.page{
+    &__sidebar{
+        background: white;
+    }
+    &__content{
+        background: $background;
+    }
+}

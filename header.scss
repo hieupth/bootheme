@@ -1,0 +1,15 @@
+.input-group{
+    align-items: center !important;
+    padding: 1vh;
+    span{
+        background-color: white; 
+        border: 0;       
+    }
+    >.form-control{
+        border: 0px;
+        padding-inline: 0px;
+    }
+}
+.header{
+    background: white;
+}
