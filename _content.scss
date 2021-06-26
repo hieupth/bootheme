@@ -1,4 +1,5 @@
-$background: #E5E5E5;
+@import "var";
+
 .wrapper{
     height: 100vh;
 }
@@ -7,6 +8,6 @@ $background: #E5E5E5;
         background: white;
     }
     &__content{
-        background: $background;
+        background: $background_content;
     }
 }

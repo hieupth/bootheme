@@ -1,11 +1,4 @@
-
-$table_header: #90A0B7;
-$table_cell: #707683;
-
-svg{
-    width: 30px;
-    margin-right: 5%;
-}
+@import "var";
 
 .document{
     &__container{
@@ -43,5 +36,4 @@ svg{
             }
         }
     }
-    
 }
