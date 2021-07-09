@@ -6,6 +6,11 @@
 .page{
     &__sidebar{
         background: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
     }
     &__content{
         background: $background_content;

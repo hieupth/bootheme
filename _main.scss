@@ -7,3 +7,23 @@ svg{
     width: 30px;
     margin-right: 5%;
 }
+
+body{
+    background-color: #E5E5E5 !important;
+}
+
+*{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+  
+@media (min-width: 768px){
+    .pl-md-6{
+        padding-left: 3rem !important;
+    }
+}
