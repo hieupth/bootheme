@@ -1,16 +1,17 @@
 @import "var";
 
 .sidebar{
-    box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+  
     &__profile{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-around;
         align-items: center;
         align-content: center;
+        margin-bottom: 1.4rem;
         padding-block: 3vh;
         >img{
             width: 3.846rem;
+            margin-right: 12px;
         }
         .info{
             &__name{
@@ -54,11 +55,7 @@
         }
     }
     &__sticky {
-        margin-top: 6vh;
-        position: relative;
-        top: 0;
-        left:0;
-        padding-top: .5rem;
+        padding: 0 1rem;
         overflow-x: hidden;
         overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     }

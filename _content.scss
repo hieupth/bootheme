@@ -10,7 +10,8 @@
         top: 0;
         bottom: 0;
         left: 0;
-        z-index: 100;
+        z-index: 9999;
+        width: 17vw;
     }
     &__content{
         background: $background_content;
