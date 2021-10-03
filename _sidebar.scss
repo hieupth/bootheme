@@ -35,6 +35,9 @@
     &__link{
         text-decoration: none;
         color: $text_normal;
+        :hover {
+            color: $active;
+        }
         svg{
             stroke: $icon_normal;
             rect{
@@ -58,6 +61,41 @@
         padding: 0 1rem;
         overflow-x: hidden;
         overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+    // sibar pdf
+    &__tool-box {
+        font-size: 1.385rem;
+        cursor: pointer;
+        span:hover {
+            color: $active;
+        }
+       .tool {
+            box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+            left: 40px;
+            right: 20px;
+            margin-top: 4px;
+            border-radius: 4px;
+            display: none;
+           &__item {
+               padding: 6px 12px;
+               font-weight: 600;
+            }
+            :hover {
+                cursor: pointer;
+                background-color: rgba(0,0,0,0.2);
+            }
+        }
+    }
+    &__tool-box::after {
+        content: "";
+        position: absolute;
+        top: 22px;
+        left: 0;
+        width: 100%;
+        border: 4px solid transparent;
+    }
+    &__tool-box:hover .tool{
+        display: block;
     }
 }
 
