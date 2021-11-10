@@ -35,6 +35,7 @@
     &__link{
         text-decoration: none;
         color: $text_normal;
+        cursor: pointer;
         :hover {
             color: $active;
         }
@@ -66,8 +67,10 @@
     &__tool-box {
         font-size: 1.385rem;
         cursor: pointer;
-        span:hover {
-            color: $active;
+        span {
+            &:hover {
+                color: $active;
+            }
         }
        .tool {
             box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
@@ -79,23 +82,26 @@
            &__item {
                padding: 6px 12px;
                font-weight: 600;
-            }
-            :hover {
-                cursor: pointer;
-                background-color: rgba(0,0,0,0.2);
+               &:hover {
+                   cursor: pointer;
+                   background-color: rgba(0,0,0,0.2);
+               }
             }
         }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 22px;
+            left: 0;
+            width: 100%;
+            border: 4px solid transparent;
+        }
+        &:hover .tool{
+            display: block;
+        }
     }
-    &__tool-box::after {
-        content: "";
-        position: absolute;
-        top: 22px;
-        left: 0;
+    &__templates {
         width: 100%;
-        border: 4px solid transparent;
-    }
-    &__tool-box:hover .tool{
-        display: block;
     }
 }
 
